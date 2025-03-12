@@ -1,0 +1,32 @@
+version: 4.2.18
+session: 67d206666c034d81f8c8ba8f
+steps:
+  - prompt: Focus the browser window.
+    commands: []
+  - prompt: Enter the contact page URL in the address bar.
+    commands:
+      - command: press-keys
+        keys:
+          - control
+          - l
+      - command: type
+        text: https://example.com/contact
+  - prompt: Enter the contact page URL in the address bar.
+    commands:
+      - command: press-keys
+        keys:
+          - control
+          - l
+      - command: press-keys
+        keys:
+          - backspace
+      - command: type
+        text: https://example.com/contact
+      - command: press-keys
+        keys:
+          - enter
+  - prompt: Press enter to navigate.
+    commands:
+      - command: press-keys
+        keys:
+          - enter
